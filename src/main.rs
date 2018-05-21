@@ -12,6 +12,12 @@ struct Minion {
     position: i8
 }
 
+struct Weapon {
+    name: String,
+    attack: i8,
+    durability: i8
+}
+
 struct Card {
     name: String,
     mana_cost: i8,
@@ -24,14 +30,14 @@ struct Player {
     health: i8,
     deck: Vec<Card>,
     hand: Vec<Card>,
-    board: Vec<Minion>
+    board: Vec<Minion>,
+    weapon: Option<Weapon>
 }
 
 struct Game {
     player1: Player,
     player2: Player,
-    turn: i8,
-
+    turn: i8
 }
 
 fn main() {
