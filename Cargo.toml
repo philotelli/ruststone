@@ -1,6 +1,6 @@
 [package]
 name = "ruststone"
 version = "0.1.0"
-authors = ["Phil Clare <phil.clare@interact-intranet.com>"]
+authors = ["Phil Clare <philipclare@gmail.com>"]
 
 [dependencies]
