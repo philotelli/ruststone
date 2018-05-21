@@ -5,6 +5,13 @@ enum CardKind {
     Quest
 }
 
+struct Minion {
+    name: String,
+    attack: i8,
+    health: i8,
+    position: i8
+}
+
 struct Card {
     name: String,
     mana_cost: i8,
@@ -17,7 +24,7 @@ struct Player {
     health: i8,
     deck: Vec<Card>,
     hand: Vec<Card>,
-    board: Vec<Card>
+    board: Vec<Minion>
 }
 
 struct Game {
